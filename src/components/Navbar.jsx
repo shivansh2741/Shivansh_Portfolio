@@ -29,7 +29,7 @@ const Navbar = () => {
           <Link to="/about">About</Link>
         </div>
         <div className="pl-10 text-center text-3xl md:text-2xl font-extrabold">
-          <a href="/">Portfolio</a>
+          <a rel="noreferrer" href="/">Portfolio</a>
         </div>
         <div className="hidden md:flex space-x-4 items-center text-sm">
           <Link to="/projects">Projects</Link>

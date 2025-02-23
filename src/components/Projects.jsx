@@ -7,7 +7,7 @@ const ProjectCard = ({ title, description, git, technologies }) => {
     return (
         <div className="h-auto max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] bg-gray-900 border border-neutral-100 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 p-4 sm:p-6">
             {title === "Trektopia" && (
-                <a href="#">
+                <a>
                     <img
                         className="w-full rounded-t-lg object-cover h-60 sm:h-72 md:h-80"
                         src={Tourism}
@@ -16,7 +16,7 @@ const ProjectCard = ({ title, description, git, technologies }) => {
                 </a>
             )}
             {title === "Hostellaro" && (
-                <a href="#">
+                <a>
                     <img
                         className="w-full rounded-t-lg object-cover h-60 sm:h-72 md:h-80"
                         src={Hostellaro}
@@ -25,7 +25,7 @@ const ProjectCard = ({ title, description, git, technologies }) => {
                 </a>
             )}
             <div className="p-4">
-                <a href="#">
+                <a>
                     <h5 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500">
                         {title}
                     </h5>
@@ -49,6 +49,7 @@ const ProjectCard = ({ title, description, git, technologies }) => {
 
                 <a
                     href={git}
+                    rel="noreferrer"
                     className="mt-4 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-md md:text-lg font-semibold text-white bg-gray-800 border border-gray-700 rounded-lg shadow-lg hover:bg-gray-700 hover:text-green-400 transition duration-300"
                 >
                     GitHub

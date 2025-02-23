@@ -15,6 +15,7 @@ const Footer = () => {
         <div className="text-white flex justify-around sm:w-[250px] w-full">
           <a
             href="mailto:shivansh.dwivedi.tech@gmail.com"
+			rel="noreferrer"
             className="transition ease-in-out duration-300 rounded-md hover:scale-110 cursor-pointer hover:-translate-y-1"
             style={{ cursor: "pointer" }}
           >
@@ -32,6 +33,7 @@ const Footer = () => {
           <a
             href="https://github.com/shivansh2741"
             target="_blank"
+			rel="noreferrer"
             className="transition ease-in-out duration-300 rounded-md hover:scale-110 cursor-pointer hover:-translate-y-1"
             style={{ cursor: "pointer" }}
           >
