@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const ProjectCard = ({ title, description, git, technologies }) => {
     return (
-        <div className="h-auto max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] bg-gray-900 border border-neutral-100 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 p-4 sm:p-6">
+        <div className="h-auto max-w-[500px] sm:w-[500px] md:max-w-[400px] lg:max-w-[400px] bg-gray-900 border border-neutral-100 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 p-4 sm:p-0">
             {title === "Trektopia" && (
                 <img
                     className="w-full rounded-t-lg object-cover h-60 sm:h-72 md:h-80"
@@ -60,7 +60,7 @@ const ProjectCard = ({ title, description, git, technologies }) => {
 const Projects = () => {
     return (
         <div className="bg-black">
-            <div className="flex flex-wrap gap-7 justify-center items-center m-12 p-12">
+            <div className="flex flex-wrap gap-20 justify-center items-center p-4">
                 {project.map((item, index) => (
                     <ProjectCard
                         key={index}
