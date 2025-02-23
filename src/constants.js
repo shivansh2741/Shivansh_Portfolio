@@ -20,7 +20,7 @@ export const experiences = [
         'company': 'Merkle Science',
         'role': 'Software Development Engineer',
         'duration': 'Mar 2024 - Present',
-        'logo': 'https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/e5gz1yggdy8sc1umna3e',
+        'logo': 'https://media.licdn.com/dms/image/v2/C4D0BAQHFxutEiRHN_A/company-logo_200_200/company-logo_200_200/0/1630574259475/merklescience_logo?e=2147483647&v=beta&t=h4KZWGr8jl58Qm5CywaiEOiBGgG1s7hxWvrIpZRV9sA',
         'points': [
             'Led the revamp of Ethereum Virtual Machine (EVM) integration, enhancing performance and user experience, which resulted in a 30% increase in customer acquisition.',
             'Implemented entity search alongside address and transaction search, optimizing queries with debouncing to reduce server load and improve user engagement by 10%.',
@@ -33,7 +33,7 @@ export const experiences = [
         'company': 'Maidaan',
         'role': 'Full Stack Intern',
         'duration': 'Jan 2024 - Feb 2024',
-        'logo': 'https://www.att.com/ecms/dam/att/consumer/global/logos/att_globe_500x500.jpg',
+        'logo': 'https://static-asset.inc42.com/maidaan.png',
         'points': [
             'Built a weekly streak feature, increasing user engagement by 15% and driving a 20% boost in daily active users.',
             'Optimized the score leaderboard, improving performance by 40% through query optimization and removing redundant database listeners.',

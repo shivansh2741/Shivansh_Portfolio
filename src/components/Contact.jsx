@@ -41,7 +41,6 @@ const Contact = () => {
 			});
 			return;
 		}
-		console.log(username,user_email,user_message)
 
 		emailjs
 			.send(
@@ -80,65 +79,66 @@ const Contact = () => {
 
 	return (
 
-        <div className='relative z-0 bg-black w-screen h-screen mt-12'>   
-			<div className='text-white contact overflow-x-hidden pt-12 mt-8 ' id='contact'>
-				<div className='z-10 w-full sm:w-[650px] m-auto p-8 rounded-2xl' >
-					<p className='font-light'>REACH OUT TO ME</p>
-					<h2 className='text-5xl font-extrabold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-pink-500'>Contact.</h2>
-					<form
-						ref={formRef}
-						onSubmit={handleSubmit}
-						className='mt-12 flex flex-col gap-8'
-					>
-						<label className='flex flex-col'>
-							<span className=' font-medium mb-4'>Your Name</span>
-							<input
-								type='text'
-								name='name'
-								value={form.name}
-								onChange={handleChange}
-								placeholder="Enter your name"
-								className='py-4 px-6 rounded-lg outline-none border-none font-medium bg-gray-900'
-								required
-							/>
-						</label>
-						<label className='flex flex-col'>
-							<span className=' font-medium mb-4'>Your email</span>
-							<input
-								type='email'
-								name='email'
-								value={form.email}
-								onChange={handleChange}
-								placeholder="Ex:abc@gmail.com"
-								className='py-4 px-6 rounded-lg  font-medium bg-gray-900'
-								required
-							/>
-						</label>
-						<label className='flex flex-col'>
-							<span className='font-medium mb-4'>Your Message</span>
-							<textarea
-								rows={7}
-								name='message'
-								value={form.message}
-								onChange={handleChange}
-								placeholder='Do you have anything to say?'
-								className='py-4 px-6 rounded-lg outline-none border-none font-medium bg-gray-900'
-								required
-							/>
-						</label>
+		<div className="relative z-0 bg-black w-full min-h-screen mt-12 flex flex-col items-center justify-center">
+			<div className="text-white contact overflow-hidden w-full sm:w-[650px] m-auto p-8 rounded-2xl shadow-lg bg-gray-950 mb-10">
+				<p className="font-light text-center">REACH OUT TO ME</p>
+				<h2 className="text-5xl font-extrabold mt-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-pink-400 text-center">
+					Contact.
+				</h2>
+				<form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-6">
+					<label className="flex flex-col">
+						<span className="font-medium mb-2">Your Name</span>
+						<input
+							type="text"
+							name="name"
+							value={form.name}
+							onChange={handleChange}
+							placeholder="Enter your name"
+							className="py-3 px-5 rounded-lg outline-none border border-gray-700 font-medium bg-gray-900 focus:border-pink-500 transition"
+							required
+						/>
+					</label>
+					<label className="flex flex-col">
+						<span className="font-medium mb-2">Your Email</span>
+						<input
+							type="email"
+							name="email"
+							value={form.email}
+							onChange={handleChange}
+							placeholder="Ex: abc@gmail.com"
+							className="py-3 px-5 rounded-lg outline-none border border-gray-700 font-medium bg-gray-900 focus:border-pink-500 transition"
+							required
+						/>
+					</label>
+					<label className="flex flex-col">
+						<span className="font-medium mb-2">Your Message</span>
+						<textarea
+							rows={5}
+							name="message"
+							value={form.message}
+							onChange={handleChange}
+							placeholder="Do you have anything to say?"
+							className="py-3 px-5 rounded-lg outline-none border border-gray-700 font-medium bg-gray-900 focus:border-pink-500 transition resize-none"
+							required
+						/>
+					</label>
 
+					<div className="flex justify-center mt-4">
 						<button
-							type='submit'
-							className='pt-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md bg-gray-900'
+							type="submit"
+							className="py-3 px-10 rounded-lg font-bold bg-gray-900 border border-gray-700 hover:bg-gray-800 transition shadow-md"
 						>
 							{loading ? "Sending..." : "Send"}
 						</button>
-					</form>
-				</div>
+					</div>
+				</form>
 				<ToastContainer />
 			</div>
-		<Footer/>
-        </div>
+			<div className="w-full">
+			<Footer />
+			</div>
+		</div>
+
 	);
 };
 
