@@ -3,7 +3,7 @@ import Tourism from "../assets/Tourism-Management-System.jpg";
 import Hostellaro from "../assets/Hostellaro.png";
 import Footer from "./Footer";
 
-const ProjectCard = ({ image, title, description, git, technologies }) => {
+const ProjectCard = ({ title, description, git, technologies }) => {
     return (
         <div className="h-auto max-w-[400px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] bg-gray-900 border border-neutral-100 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 p-4 sm:p-6">
             {title === "Trektopia" && (

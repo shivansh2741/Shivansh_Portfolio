@@ -30,6 +30,7 @@ const Experience = () => {
               <a
                 className="flex justify-center items-center w-full h-full"
                 href={experience.url}
+                rel="noreferrer"
                 target="_blank"
               >
                 <img
