@@ -5,17 +5,17 @@ import Footer from "./Footer";
 
 const ProjectCard = ({ title, description, git, technologies }) => {
     return (
-        <div className="h-auto max-w-[500px] sm:w-[500px] md:max-w-[400px] lg:max-w-[400px] bg-gray-900 border border-neutral-100 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 p-4 sm:p-0">
+        <div className="h-auto sm:max-h-[500px] md:max-h-[625px] w-[450px] lg:max-h-[625px] sm:w-[500px] md:max-w-[400px] lg:max-w-[500px] bg-gray-900 border border-neutral-100 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 p-4 sm:p-0">
             {title === "Trektopia" && (
                 <img
-                    className="w-full rounded-t-lg object-cover h-60 sm:h-72 md:h-80"
+                    className="w-full rounded-t-lg object-cover h-55 sm:h-60 md:h-72"
                     src={Tourism}
                     alt="Trektopia"
                 />
             )}
             {title === "Hostellaro" && (
                 <img
-                    className="w-full rounded-t-lg object-cover h-60 sm:h-72 md:h-80"
+                    className="w-full rounded-t-lg object-cover h-55 sm:h-60 md:h-72"
                     src={Hostellaro}
                     alt="Hostellaro"
                 />
@@ -48,7 +48,7 @@ const ProjectCard = ({ title, description, git, technologies }) => {
                     href={git}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-md md:text-lg font-semibold text-white bg-gray-800 border border-gray-700 rounded-lg shadow-lg hover:bg-gray-700 hover:text-green-400 transition duration-300"
+                    className="mt-4 px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-md md:text-lg font-semibold text-white bg-gray-800 border border-gray-700 rounded-lg shadow-lg hover:bg-gray-700 hover:text-green-400 transition duration-300 mb-2"
                 >
                     GitHub
                 </a>
@@ -60,7 +60,7 @@ const ProjectCard = ({ title, description, git, technologies }) => {
 const Projects = () => {
     return (
         <div className="bg-black">
-            <div className="flex flex-wrap gap-20 justify-center items-center p-4">
+            <div className="flex flex-wrap gap-12 justify-center items-center p-4 mt-16">
                 {project.map((item, index) => (
                     <ProjectCard
                         key={index}
