@@ -76,7 +76,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/experience" onClick={closeMobileMenu}>
-                Experince
+                Experience
               </Link>
             </li>
             <li>
